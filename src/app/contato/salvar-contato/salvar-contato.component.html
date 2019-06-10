@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+        Cadastrar
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <ion-label>  Nome: </ion-label>
+   <ion-input [(ngModel)]="contato.nome"></ion-input>
+
+   <ion-label>  Telefone: </ion-label>
+   <ion-input [(ngModel)]="contato.telefone"></ion-input>
+
+  <ion-button color="dark" expand="full" (click)="salvar()"> Salvar </ion-button>
+  <ion-button href="home" color="dark" expand="full"> Voltar </ion-button>
+</ion-content>

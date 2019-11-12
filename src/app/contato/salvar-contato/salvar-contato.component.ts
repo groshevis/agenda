@@ -18,7 +18,7 @@ export class SalvarContatoComponent implements OnInit {
   salvar(){
     this.banco.list('contato').push(this.contato);
     this.contato= new Contato();
-    alert('boa meu chapa deu certinho, obg primo');
+    alert('Cadastro efetuado!');
   }
 
 }

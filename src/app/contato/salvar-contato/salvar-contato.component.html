@@ -1,18 +1,51 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-        Cadastrar
-    </ion-title>
+    <ion-title> Cadastro</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-   <ion-label>  Nome: </ion-label>
-   <ion-input [(ngModel)]="contato.nome"></ion-input>
+  <ion-item>
+    <ion-label> Nome: </ion-label>
+    <ion-input [(ngModel)]="contato.nome" type="text" placeholder=" Insira seu nome completo: "></ion-input>
+  </ion-item>
 
-   <ion-label>  Telefone: </ion-label>
-   <ion-input [(ngModel)]="contato.telefone"></ion-input>
+  <ion-item>
+    <ion-label> CPF: </ion-label>
+    <ion-input [(ngModel)]="contato.cpf" type="text" placeholder=" Insira seu cpf: "></ion-input>
+  </ion-item>
 
-  <ion-button color="dark" expand="full" (click)="salvar()"> Salvar </ion-button>
-  <ion-button href="home" color="dark" expand="full"> Voltar </ion-button>
+  <ion-item>
+    <ion-label> Registro Acadêmico: </ion-label>
+    <ion-input [(ngModel)]="contato.ra" type="text" placeholder=" Insira o R.A do seu filho: "></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label> Número de Contato: </ion-label>
+    <ion-input [(ngModel)]="contato.telefone" type="text" placeholder=" Insira seu telefone"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label> Estado: </ion-label>
+    <ion-select>
+      <ion-select-option value="p">Paraná</ion-select-option>
+      <ion-select-option value="m">Minas Gerais</ion-select-option>
+      <ion-select-option value="r">Rio de Janeiro</ion-select-option>
+      <ion-select-option value="s">São Paulo</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label> Cidade: </ion-label>
+    <ion-input [(ngModel)]="contato.cidade" placeholder=" Insira sua cidade "></ion-input>
+  </ion-item>
+
+  <ion-button color="dark" href="home"> Voltar </ion-button>
+  <ion-button (click)="salvar()" color="dark" href="notificacao"> Salvar</ion-button>
+
+
 </ion-content>
+
+<ion-footer>
+
+</ion-footer>

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { AngularFireDatabase } from '@angular/fire/database';
 
 @Component({
   selector: 'app-home',
@@ -8,5 +11,7 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   constructor() {}
+  ngOnInit() { }
+
 
 }

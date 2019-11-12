@@ -1,13 +1,46 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Agenda Telefone
+    <ion-title> SICAE <ion-icon name="school"></ion-icon>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button expand="full" color="dark" href = "salvar"> Cadastrar </ion-button>
-  <ion-button expand="full" color="dark" href = "listar"> Listar </ion-button>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Entrar </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating"> Email: </ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating"> senha: </ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-button color="dark" href="notificacao"> Entrar <ion-icon name="log-in"> </ion-icon>
+      </ion-button>
+      <ion-button color="dark" href="salvar-contato"> Se Cadastrar </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="light">
+      <ion-button color="dark"> Código do Admin </ion-button>
+      <ion-item>
+        <ion-label position="floating"> Código do Adm: </ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-button color="dark" herf="salas"> Entrar <ion-icon name="log-in"> </ion-icon>
+      </ion-button>
+
+  </ion-card>
 
 </ion-content>
+
+<ion-footer>
+
+</ion-footer>

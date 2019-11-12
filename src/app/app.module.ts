@@ -13,20 +13,21 @@ import { SalvarContatoComponent } from './contato/salvar-contato/salvar-contato.
 import { ListarContatoComponent } from './contato/listar-contato/listar-contato.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+import {NotificacaoComponent} from './notificacao/notificacao.component';
 
 @NgModule({
-  declarations: [AppComponent, SalvarContatoComponent, ListarContatoComponent],
+  declarations: [AppComponent, SalvarContatoComponent, ListarContatoComponent, NotificacaoComponent ],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule,
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, AngularFireDatabaseModule,
     AngularFireModule.initializeApp({ //configuração
-      apiKey: "AIzaSyBj_KZVFZOOpUvz-47o6ti_vw2FOh2MeVQ",
-      authDomain: "teste-f376a.firebaseapp.com",
-      databaseURL: "https://teste-f376a.firebaseio.com",
-      projectId: "teste-f376a",
-      storageBucket: "teste-f376a.appspot.com",
-      messagingSenderId: "941183180705",
-      appId: "1:941183180705:web:8e6674d8b43207b0"
-    }), AngularFireDatabaseModule// biblioteca
+    apiKey: "AIzaSyCHM5pdcN8_8wNRYZRkNCaGpg1QZAar-FM",
+    authDomain: "agenda-feba3.firebaseapp.com",
+    databaseURL: "https://agenda-feba3.firebaseio.com",
+    projectId: "agenda-feba3",
+    storageBucket: "agenda-feba3.appspot.com",
+    messagingSenderId: "586002027120",
+    appId: "1:586002027120:web:23169e59f1eb937c"
+    })// biblioteca
   ],
   providers: [
     StatusBar,

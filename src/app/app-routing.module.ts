@@ -10,7 +10,10 @@ const routes: Routes = [
   { path: 'listar-contato', component:ListarContatoComponent},
   { path: 'salvar-contato', component:SalvarContatoComponent},
   { path: 'salas', loadChildren: './salas/salas.module#SalasPageModule' },
-  {path: 'notificacao', component: NotificacaoComponent}
+  {path: 'notificacao', component: NotificacaoComponent},
+  { path: 'primeiro-info', loadChildren: './salas/primeiro-info/primeiro-info.module#PrimeiroInfoPageModule' },
+  { path: 'info-primeiro', loadChildren: './alunos/info-primeiro/info-primeiro.module#InfoPrimeiroPageModule' },
+  { path: 'cadastro', loadChildren: './alunos/cadastro/cadastro.module#CadastroPageModule' },
 
 ];
 

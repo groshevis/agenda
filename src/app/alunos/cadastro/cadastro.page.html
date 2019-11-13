@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastro do Aluno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label> Nome Completo: </ion-label>
+    <ion-input [(ngModel)]="alunos.nome" type="text" placeholder=" Insira seu nome completo: "></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label> Registro Acadêmico: </ion-label>
+    <ion-input [(ngModel)]="alunos.ra" type="text" placeholder=" Insira seu R.A.: "></ion-input>
+  </ion-item>
+
+<ion-button color="dark" href="home"> Voltar </ion-button>
+<ion-button (click)="salvar()" color="dark" href="notificacao"> Cdastrar </ion-button>
+
+</ion-content>

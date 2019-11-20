@@ -7,6 +7,7 @@ import { ModalController } from '@ionic/angular';
 import { SalvarContatoComponent } from '../salvar-contato/salvar-contato.component';
 import * as _ from 'lodash';
 
+
 import { Router, NavigationExtras } from '@angular/router';
 
 @Component({
@@ -15,11 +16,13 @@ import { Router, NavigationExtras } from '@angular/router';
   styleUrls: ['./listar-contato.component.scss'],
 })
 export class ListarContatoComponent implements OnInit {
+
   listaContatos: Observable<Contato[]>;
   listaFiltro: Contato[];
   filtro = {};
   contato: any;
   valor: string;
+
 
   constructor(
     private rota: Router,
@@ -37,25 +40,29 @@ export class ListarContatoComponent implements OnInit {
 
   ngOnInit() {
 
-      this.listaContatos.subscribe(contato => {
-            this.contato = contato;
-            this.listaFiltro = _.filter(this.contato, _.conforms(this.filtro));
-      })
-     }
-
-    filtrar(){
-      this.filtro['nome'] = val => val.includes(this.valor);
+    this.listaContatos.subscribe(contato => {
+      this.contato = contato;
       this.listaFiltro = _.filter(this.contato, _.conforms(this.filtro));
+    })
   }
 
-    excluir(entidade) {
-      this.fire.list('contato').remove(entidade.key);
-    }
-
-    async alterar(contato) {
-      const tela = await this.modal.create({
-        component: SalvarContatoComponent, componentProps: { contato: contato }
-      });
-      tela.present();
-    }
+  filtrar() {
+    this.filtro['nome'] = val => val.includes(this.valor);
+    this.listaFiltro = _.filter(this.contato, _.conforms(this.filtro));
   }
+
+  excluir(entidade) {
+    this.fire.list('contato').remove(entidade.key);
+    alert('Excluído com Sucesso');
+  }
+
+  async alterar(contato) {
+    const tela = await this.modal.create({
+      component: SalvarContatoComponent, componentProps: { contato: contato }
+    });
+    tela.present();
+  }
+
+
+
+}

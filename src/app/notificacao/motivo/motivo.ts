@@ -5,5 +5,5 @@ export class Motivo{
   data: string;
   horario:string;
   turma: string;
-  
+
 }

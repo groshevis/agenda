@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
-import { Motivo} from './entidade/motivo';
+import { Motivo} from './motivo/motivo';
 import { Router } from '@angular/router';
 
 @Component({

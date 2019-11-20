@@ -13,7 +13,8 @@ const routes: Routes = [
   {path: 'notificacao', component: NotificacaoComponent},
   { path: 'primeiro-info', loadChildren: './salas/primeiro-info/primeiro-info.module#PrimeiroInfoPageModule' },
   { path: 'info-primeiro', loadChildren: './alunos/info-primeiro/info-primeiro.module#InfoPrimeiroPageModule' },
-  { path: 'cadastro', loadChildren: './alunos/cadastro/cadastro.module#CadastroPageModule' },
+  { path: 'cadastro', loadChildren: './alunos/cadastro/cadastro.module#CadastroPageModule' },  
+
 
 ];
 

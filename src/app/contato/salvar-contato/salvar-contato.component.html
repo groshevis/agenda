@@ -7,22 +7,32 @@
 <ion-content>
   <ion-item>
     <ion-label> Nome: </ion-label>
-    <ion-input [(ngModel)]="contato.nome" type="text" placeholder=" Insira seu nome completo: "></ion-input>
+    <ion-input [(ngModel)]="contato.nome" type="text" name="nome" placeholder=" Insira seu nome completo: "></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label> Email: </ion-label>
+    <ion-input [(ngModel)]="contato.email" type="text" name="email" placeholder=" Insira seu email completo: "></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label> Senha: </ion-label>
+    <ion-input [(ngModel)]="contato.senha" type="password" name="senha" placeholder=" Insira sua senha: "></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label> CPF: </ion-label>
-    <ion-input [(ngModel)]="contato.cpf" type="text" placeholder=" Insira seu cpf: "></ion-input>
+    <ion-input [(ngModel)]="contato.cpf" type="text" name="cpf" placeholder=" Insira seu cpf: "></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label> Registro Acadêmico: </ion-label>
-    <ion-input [(ngModel)]="contato.ra" type="text" placeholder=" Insira o R.A do seu filho: "></ion-input>
+    <ion-input [(ngModel)]="contato.ra" type="text" name="ra" placeholder=" Insira o R.A do seu filho: "></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label> Número de Contato: </ion-label>
-    <ion-input [(ngModel)]="contato.telefone" type="text" placeholder=" Insira seu telefone"></ion-input>
+    <ion-input [(ngModel)]="contato.telefone" type="text" name="telefone" placeholder=" Insira seu telefone"></ion-input>
   </ion-item>
 
   <ion-item>
@@ -37,7 +47,7 @@
 
   <ion-item>
     <ion-label> Cidade: </ion-label>
-    <ion-input [(ngModel)]="contato.cidade" placeholder=" Insira sua cidade "></ion-input>
+    <ion-input [(ngModel)]="contato.cidade" name="cidade" placeholder=" Insira sua cidade "></ion-input>
   </ion-item>
 
   <ion-button color="dark" href="home"> Voltar </ion-button>

@@ -14,6 +14,7 @@ import { ListarContatoComponent } from './contato/listar-contato/listar-contato.
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import {NotificacaoComponent} from './notificacao/notificacao.component';
+import { AngularFireAuth } from 'angularfire2/auth';
 
 @NgModule({
   declarations: [AppComponent, SalvarContatoComponent, ListarContatoComponent, NotificacaoComponent ],
@@ -30,6 +31,7 @@ import {NotificacaoComponent} from './notificacao/notificacao.component';
     })// biblioteca
   ],
   providers: [
+    AngularFireAuth,
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }

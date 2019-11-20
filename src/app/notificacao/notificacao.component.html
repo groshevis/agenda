@@ -35,7 +35,7 @@
     <ion-input [(ngModel)]="motivo.turma" placeholder=" Insira a turma o ano do seu filho"></ion-input>
   </ion-item>
 
-  <ion-button href = "listar-contato" color="dark"> Salvar</ion-button>
+  <ion-button (click) = "salvar()" color="dark"> Salvar</ion-button>
   <ion-button color="dark" href="home"> Voltar ao início </ion-button>
 
 </ion-content>

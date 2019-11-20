@@ -6,5 +6,5 @@ export class Contato{
   cidade: string;
   email: string;
   senha: string;
-  key;
+  key: any;
 }

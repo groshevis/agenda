@@ -24,11 +24,11 @@ export class CadastroPage implements OnInit {
 
   ngOnInit() {
   }
-  salvar(){
-    this.banco.list('contato').push(this.alunos);
-    this.alunos= new Alunos();
-    this.rota.navigate(['info-primeiro']);
-    alert('Cadastro efetuado!');
-  }
+  // salvar(){
+  //   this.banco.list('contato').push(this.alunos);
+  //   this.alunos= new Alunos();
+  //   this.rota.navigate(['info-primeiro']);
+  //   alert('Cadastro efetuado!');
+  // }
 
   }

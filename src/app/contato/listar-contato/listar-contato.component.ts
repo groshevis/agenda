@@ -39,7 +39,6 @@ export class ListarContatoComponent implements OnInit {
   }
 
   ngOnInit() {
-
     this.listaContatos.subscribe(contato => {
       this.contato = contato;
       this.listaFiltro = _.filter(this.contato, _.conforms(this.filtro));
@@ -47,7 +46,7 @@ export class ListarContatoComponent implements OnInit {
   }
 
   filtrar() {
-    this.filtro['nome'] = val => val.includes(this.valor);
+    this.filtro['nomedofilho'] = val => val.includes(this.valor);
     this.listaFiltro = _.filter(this.contato, _.conforms(this.filtro));
   }
 
@@ -56,12 +55,13 @@ export class ListarContatoComponent implements OnInit {
     alert('Excluído com Sucesso');
   }
 
-  async alterar(contato) {
+  /*async alterar(contato) {
     const tela = await this.modal.create({
       component: SalvarContatoComponent, componentProps: { contato: contato }
     });
     tela.present();
-  }
+  }*/
+
 
 
 

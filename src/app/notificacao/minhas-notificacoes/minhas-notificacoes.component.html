@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Minhas notificações</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-content>
+    <ion-searchbar [(ngModel)]="valor" (ionChange)="filtrar()"></ion-searchbar>
+    <ion-list>
+    &nbsp; &nbsp; <ion-label> Motivo:</ion-label> &nbsp; &nbsp; <ion-label> Data: </ion-label>
+
+      <ion-item *ngFor="let motivo of listaFiltro">
+         <ion-label>  {{ motivo.motivo }} &nbsp; &nbsp; {{ motivo.data }}</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-button color="dark" href="home">
+      <ion-icon name="home"> </ion-icon>
+    </ion-button>
+
+    <ion-button color="dark" href="notificacao">
+      <ion-icon name="arrow-back"> </ion-icon>
+    </ion-button>
+  </ion-content>

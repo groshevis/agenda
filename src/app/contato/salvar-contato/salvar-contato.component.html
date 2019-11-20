@@ -7,7 +7,12 @@
 <ion-content>
   <ion-item>
     <ion-label> Nome: </ion-label>
-    <ion-input [(ngModel)]="contato.nome" type="text" name="nome" placeholder=" Insira seu nome completo: "></ion-input>
+    <ion-input [(ngModel)]="contato.nome" type="text" name="nome" placeholder=" Insira seu nome completo "></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label> Nome do filho: </ion-label>
+    <ion-input [(ngModel)]="contato.nomedofilho" type="text" name="nomedofilho" placeholder="  Nome completo "></ion-input>
   </ion-item>
 
   <ion-item>
@@ -36,23 +41,18 @@
   </ion-item>
 
   <ion-item>
-    <ion-label> Estado: </ion-label>
+    <ion-label> Turma: </ion-label>
     <ion-select>
-      <ion-select-option value="p">Paraná</ion-select-option>
-      <ion-select-option value="m">Minas Gerais</ion-select-option>
-      <ion-select-option value="r">Rio de Janeiro</ion-select-option>
-      <ion-select-option value="s">São Paulo</ion-select-option>
+      <ion-select-option value="i">Informática</ion-select-option>
+      <ion-select-option value="m">Mecatrônica</ion-select-option>
+      <ion-select-option value="a">Agroindústria</ion-select-option>
+      <ion-select-option value="e">Eletromecânica</ion-select-option>
     </ion-select>
   </ion-item>
 
-  <ion-item>
-    <ion-label> Cidade: </ion-label>
-    <ion-input [(ngModel)]="contato.cidade" name="cidade" placeholder=" Insira sua cidade "></ion-input>
-  </ion-item>
 
-  <ion-button color="dark" href="home"> Voltar </ion-button>
-  <ion-button (click)="salvar()" color="dark" href="notificacao"> Salvar</ion-button>
-
+  <ion-button (click)="salvar()" color="dark" href="listar-contato" expand="full"> Salvar</ion-button>
+  <ion-button color="dark" href="home" expand="full"> Voltar </ion-button>
 
 </ion-content>
 

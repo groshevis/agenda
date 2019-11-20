@@ -19,7 +19,8 @@ export class NotificacaoComponent implements OnInit {
     salvar(){
       this.banco.list('motivo').push(this.motivo);
       this.motivo= new Motivo();
-      this.rota.navigate(['listar-contato']);
+      this.rota.navigate(['notificacao-listar']);
+      alert("Enviado")  
     }
 
 }

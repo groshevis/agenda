@@ -15,9 +15,10 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import {NotificacaoComponent} from './notificacao/notificacao.component';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { MinhasNotificacoesComponent } from './notificacao/minhas-notificacoes/minhas-notificacoes.component';
 
 @NgModule({
-  declarations: [AppComponent, SalvarContatoComponent, ListarContatoComponent, NotificacaoComponent ],
+  declarations: [AppComponent, SalvarContatoComponent, ListarContatoComponent, NotificacaoComponent, MinhasNotificacoesComponent ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, AngularFireDatabaseModule,
     AngularFireModule.initializeApp({ //configuração

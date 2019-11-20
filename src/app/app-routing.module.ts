@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import {ListarContatoComponent} from './contato/listar-contato/listar-contato.component';
 import {SalvarContatoComponent} from './contato/salvar-contato/salvar-contato.component';
 import {NotificacaoComponent} from './notificacao/notificacao.component';
+import {MinhasNotificacoesComponent} from './notificacao/minhas-notificacoes/minhas-notificacoes.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -11,11 +12,7 @@ const routes: Routes = [
   { path: 'salvar-contato', component:SalvarContatoComponent},
   { path: 'salas', loadChildren: './salas/salas.module#SalasPageModule' },
   {path: 'notificacao', component: NotificacaoComponent},
-  { path: 'primeiro-info', loadChildren: './salas/primeiro-info/primeiro-info.module#PrimeiroInfoPageModule' },
-  { path: 'info-primeiro', loadChildren: './alunos/info-primeiro/info-primeiro.module#InfoPrimeiroPageModule' },
-  { path: 'cadastro', loadChildren: './alunos/cadastro/cadastro.module#CadastroPageModule' },  
-
-
+  {path: 'minhas-notificacoes', component:MinhasNotificacoesComponent},
 ];
 
 

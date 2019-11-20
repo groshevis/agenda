@@ -25,6 +25,7 @@
     <ion-input [(ngModel)]="motivo.data" type="text" placeholder=" Insira a data de saída:"></ion-input>
   </ion-item>
 
+
   <ion-item>
     <ion-label> Horário: </ion-label>
     <ion-input [(ngModel)]="motivo.horario" type="text" placeholder=" Insira o horário de sairá"></ion-input>
@@ -32,11 +33,17 @@
 
   <ion-item>
     <ion-label> Turma: </ion-label>
-    <ion-input [(ngModel)]="motivo.turma" placeholder=" Insira a turma o ano do seu filho"></ion-input>
+    <ion-select>
+      <ion-select-option value="i">Informática</ion-select-option>
+      <ion-select-option value="m">Mecatrônica</ion-select-option>
+      <ion-select-option value="a">Agroindústria</ion-select-option>
+      <ion-select-option value="e">Eletromecânica</ion-select-option>
+    </ion-select>
   </ion-item>
 
-  <ion-button (click) = "salvar()" color="dark"> Salvar</ion-button>
-  <ion-button color="dark" href="home"> Voltar ao início </ion-button>
+  <ion-button expand="full" (click)="salvar()" color="dark"> Salvar</ion-button>
+  <ion-button expand="full"  color="dark" href="home"> Voltar ao início </ion-button>
+  <ion-button expand="full" color="dark" href="minhas-notificacoes"> Ver minhas notificações </ion-button>
 
 </ion-content>
 

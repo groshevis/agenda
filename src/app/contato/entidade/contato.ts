@@ -1,5 +1,6 @@
 export class Contato{
   nome:string;
+  nomedofilho: string;
   telefone:string;
   ra: string;
   cpf: string;
